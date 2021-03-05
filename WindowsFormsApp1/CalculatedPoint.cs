@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
         {
             string output = string.Empty;
 
-            output += "| Y: " + Y.ToString("0.00000000") + " |\t\t\t| " + "X1: " + X1.ToString("0.000") + " |\t\t\t| " + "X2: " + X2.ToString("0.000") + " |\n";
+            output += "| Y: " + Y.ToString("0.00000000") + " |\t| " + "X1: " + X1.ToString("0.000") + " |\t| " + "X2: " + X2.ToString("0.000") + " |\n";
 
             return output;
         }
