@@ -48,9 +48,9 @@ namespace WindowsFormsApp1
                 double cb_X1_MAX = convertTextToDouble(ref TB_X1_MAX);
                 double cb_X2_MAX = convertTextToDouble(ref TB_X2_MAX);
 
-                //int CriticalCounter = 0;
-                //int LimitCounterX1 = (int)((Math.Max(cb_X1_MAX, cb_X1) - Math.Min(cb_X1_MAX, cb_X1)) / Accuracy);
-                //int LimitCounterX2 = (int)((Math.Max(cb_X2_MAX, cb_X2) - Math.Min(cb_X2_MAX, cb_X2)) / Accuracy);
+                int CriticalCounter = 0;
+                //int LimitCounterX1 = (int)((Math.Max(cb_X1_MAX, cb_X1) - Math.Min(cb_X1_MAX, cb_X1)) / Math.Min(Accuracy, cb_INTERVAL_X1));
+                //int LimitCounterX2 = (int)((Math.Max(cb_X2_MAX, cb_X2) - Math.Min(cb_X2_MAX, cb_X2)) / Math.Min(Accuracy, cb_INTERVAL_X2));
 
                 for (double i_x1 = cb_X1, i_x2 = cb_X2;
                     (i_x1 < cb_X1_MAX || i_x2 < cb_X2_MAX);// && (CriticalCounter < LimitCounterX1 || CriticalCounter < LimitCounterX2);
